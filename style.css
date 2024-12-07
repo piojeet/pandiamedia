@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: "Inter", serif;
+}
+
+:root {
+    --bg-color: #0D2B53;
+    --light-gray: #9DA8B9;
+    --light-primary: #F2F3F7;
+    --btn-color: #4FDD90;
+    --white-color: #FFFF;
+}
+
+
+.header {
+    background: var(--bg-color);
+}
+
+.header nav {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    color: #fff;
+}
+
+.header nav a {
+    color: #fff;
+}
+
+/* hero section */
+.hero_section {
+    padding: 0 2rem;
+}
+
+.heading_hero h1 {
+    font-size: 20.3vw;
+    line-height: 1;
+    position: relative;
+    left: -12px;
+}
+
+.heading_hero {
+    border-bottom: 2px solid #000;
+    padding-bottom: 2rem;
+}
+
+.heading_hero span:nth-child(1) {
+    color: var(--bg-color);
+}
+
+.heading_hero span:nth-child(2) {
+    color: var(--light-gray);
+}
+
+.heading_hero p {
+    line-height: 1;
+    position: relative;
+    top: -1.5rem;
+    font-size: 2.5vw;
+    color: var(--bg-color);
+}
+
+.logo_top {
+    width: 16rem;
+}
+
+.logo_top img {
+    width: 100%;
+}
+
+/* migraine section  */
+.migraine_section {
+    padding-top: 2rem;
+}
+
+.migraine_image img {
+    width: 100%;
+}
+
+.migraine_text {
+    font-size: 18px;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+.migraine_content {
+    padding: 2rem 2rem;
+}
+
+.migraine_title {
+    font-size: 40px;
+    color: var(--bg-color);
+}
+
+.migraine_description {
+    padding: 1.5rem 0;
+    font-size: 18px;
+}
+
+.cta_btn {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    background: var(--btn-color);
+    color: var(--bg-color);
+    border-radius: 100vh;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: 700;
+    border: 2px solid var(--btn-color);
+    transition: all .2s ease;
+}
+
+.cta_btn:hover {
+    background: var(--white-color);
+}
+
+/* fitness_clinical_section */
+.fitness_clinical_section {
+    padding: 0 2rem;
+}
+
+.fitness_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+    padding: 2rem 0;
+}
+
+.fitness_image img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.fitness_image {
+    margin-bottom: 2rem;
+}
+
+.fitness_description {
+    font-size: 18px;
+    padding: 1rem 0;
+}
+
+.fitness_title {
+    font-size: 40px;
+    color: var(--bg-color);
+}
+
+/* videoTutorial_section */
+
+.videoTutorial_section {
+    padding: 2rem 4rem;
+}
+
+
+.tutorial_video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1rem;
+}
+
+.tutorial_description {
+    padding: 8px 20px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: fit-content;
+    border-radius: 100vh;
+    border: 2px solid var(--btn-color);
+    color: var(--bg-color);
+    font-weight: 700;
+    background: var(--btn-color);
+}
+
+/* about_section */
+/* .about_section {
+    padding-bottom: 2rem;
+} */
+
+.topics_intro {
+    padding: 16px 0;
+    background: var(--bg-color);
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+
+.topics_intro a {
+    color: var(--white-color);
+}
+
+.topics_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem 2rem;
+    background: var(--light-primary);
+    gap: 4rem;
+}
+
+.topic_image_wrapper {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto;
+}
+
+.topic_image_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.topic_item {
+    padding: 1rem;
+    background: var(--white-color);
+    border-radius: 1rem;
+}
+
+.topic_title {
+    font-size: 20px;
+    color: var(--bg-color);
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.topic_description {
+    text-align: center;
+}
+
+/* appointment_section */
+.appointment_section {
+    padding: 2rem;
+}
+
+.action_icon_wrapper {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto;
+    border: 2px solid var(--bg-color);
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.action_icon_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.share_icon_wrapper {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.share_icon_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.appointment_actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 10rem;
+    gap: 4rem;
+}
+
+.action_item {
+    background: var(--light-primary);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.action_title {
+    font-size: 20px;
+    color: var(--bg-color);
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.share_section {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 18px;
+    color: var(--bg-color);
+    font-weight: 600;
+}
+
+/* footer_section */
+.footer_section {
+    background: var(--bg-color);
+}
+
+.cta_btn.social_text {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 2rem;
+}
+
+.cta_btn.social_text img {
+    width: 1.5rem;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+}
+
+.footer_logo {
+    width: 15rem;
+}
+
+.footer_logo img {
+    width: 100%;
+}
+
+.footer_social_icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.social_icon_link {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid var(--white-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    transition: all .2s ease;
+}
+
+.social_icon_link img {
+    width: 50%;
+    height: 50%;
+    filter: invert(100);
+    transition: all .2s ease;
+}
+
+.social_icon_link:hover {
+    background: var(--btn-color);
+}
+
+.social_icon_link:hover img {
+    filter: invert(0);
+}
+
+.contact_number {
+    font-size: 18px;
+    color: var(--white-color);
+}
+
+.footer_copyright {
+    background: #384e6d;
+    padding: 1rem 2rem;
+    text-align: center;
+    color: var(--white-color);
+}
+
+/* email_preferences_section */
+.email_preferences_section {
+    padding: 2rem 2rem;
+}
+
+.email_preferences_heading {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.email_preferences_links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.preferences_link {
+    color: #000;
+}
+
+
+/* media queries  */
+@media only screen and (max-width: 1024px) {
+    .heading_hero h1 {
+        font-size: 20vw;
+    }
+
+    .heading_hero p {
+        top: -0.5rem;
+    }
+
+    .fitness_container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+
+    .fitness_image {
+        margin-bottom: 1rem;
+    }
+
+    .topics_list,
+    .appointment_actions {
+        gap: 2rem;
+    }
+
+    .email_preferences_links {
+        gap: 1rem;
+        font-size: 14px;
+    }
+
+    .appointment_actions {
+        gap: 2rem;
+        padding: 0 3rem;
+    }
+
+    .migraine_content {
+        padding-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header nav {
+        font-size: 14px;
+    }
+
+    .heading_hero h1 {
+        font-size: 19.7vw;
+    }
+
+    .topics_list {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2rem 1rem;
+        gap: 1rem;
+    }
+
+    .header nav {
+        padding: 0 1rem;
+        height: 40px;
+    }
+
+    .hero_section {
+        padding: 0 1rem;
+    }
+
+    .heading_hero h1 {
+        font-size: 20.3vw;
+        left: -6px;
+    }
+
+    .migraine_content {
+        padding: 2rem 1rem;
+        padding-top: 1rem;
+    }
+
+    .migraine_title {
+        font-size: 30px;
+    }
+
+    .migraine_description {
+        padding: 1rem 0;
+        font-size: 18px;
+    }
+
+    .fitness_clinical_section {
+        padding: 0 1rem;
+    }
+
+    .fitness_title {
+        font-size: 32px;
+    }
+
+    .footer_copyright {
+        font-size: 12px;
+    }
+
+    .appointment_actions {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 0rem;
+        gap: 1rem;
+    }
+
+    .appointment_section {
+        padding: 2rem 1rem;
+    }
+
+    .email_preferences_links {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .social_icon_link {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .cta_btn.social_text {
+        font-size: 14px;
+    }
+
+    .footer_content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer_social_icons,
+    .cta_btn.social_text {
+        margin-top: 1rem;
+    }
+
+    .footer_content {
+        padding: 2rem 1rem;
+    }
+
+    .email_preferences_section {
+        padding-top: 1rem;
+    }
+
+    .footer_logo {
+        width: 10rem;
+    }
+
+    .contact_number {
+        font-size: 16px;
+    }
+
+    .videoTutorial_section {
+        padding: 2rem 1rem;
+    }
+
+    .migraine_text {
+        padding: 0 1rem;
+    }
+
+    .tutorial_description {
+        margin-top: 1rem;
+    }
+
+    .logo_top {
+        width: 13rem;
+    }
+
+    .footer_copyright {
+        padding: 1rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .header nav {
+        font-size: 12px;
+    }
+
+    .heading_hero p {
+        top: -0.3rem;
+    }
+
+    .heading_hero h1 {
+        font-size: 19.5vw;
+        left: -3px;
+    }
+
+    .migraine_text {
+        font-size: 16px;
+    }
+
+    .migraine_title,
+    .fitness_title {
+        font-size: 22px;
+    }
+
+    .migraine_description,
+    .fitness_description {
+        font-size: 16px;
+    }
+
+    .cta_btn {
+        font-size: 14px;
+    }
+
+    .tutorial_description {
+        font-size: 11px;
+        padding: 8px 10px;
+    }
+
+    .topics_intro {
+        font-size: 15px;
+        padding: 1rem 1rem;
+    }
+
+    .topic_description {
+        font-size: 14px;
+    }
+
+    .share_section {
+        font-size: 14px;
+    }
+
+    .logo_top {
+        width: 10rem;
+    }
+
+    .footer_copyright {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .heading_hero h1 {
+        font-size: 19.2vw;
+    }
+}
